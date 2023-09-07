@@ -1,0 +1,25 @@
+@import "./null";
+@import "./mixins";
+@import "./globals";
+@import "./themes/normal";
+@import "./themes/dark";
+
+body {
+	// Скролл заблокирован
+	.lock & {
+		touch-action: none;
+		overflow: hidden;
+	}
+}
+
+.app {
+	display: flex;
+
+	min-height: 100vh;
+
+	font: var(--font-m);
+	font-weight: 400;
+	color: var(--text-color);
+
+	background: var(--bg-color);
+}

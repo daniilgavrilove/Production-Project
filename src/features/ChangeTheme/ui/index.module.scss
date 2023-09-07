@@ -1,0 +1,8 @@
+@use "sass:math";
+@import "../../../shared/styles/mixins";
+
+.ChangeTheme {
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+}
