@@ -1,15 +1,15 @@
-name: Linting, testing, building
+name: linting, testing, building
 on:
   push:
-    branches:[master]
+    branches: [ master ]
   pull_request:
-    branches:[master]
-  jobs:
-    pipeline:
-      runs-on: ubuntu-latest
-      strategy:
-        matrix:
-          node-version: [17.x]
+    branches: [ master ]
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [ 17.x ]
 
     steps:
       - uses: actions/checkout@v2
