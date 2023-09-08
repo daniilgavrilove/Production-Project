@@ -12,6 +12,8 @@
     "indentation": [
       "tab"
     ],
+    "scss/at-mixin-pattern": null,
+    "block-no-empty": null,
     "color-hex-case": "upper",
     "no-eol-whitespace": null,
     "declaration-empty-line-before": null,

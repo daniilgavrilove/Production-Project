@@ -1,7 +1,7 @@
-import cn from 'classnames';
+/* eslint-disable */
 import { ErrorPageProps } from './ErrorPage.props';
 import 'pages/ErrorPage/ui/ErrorPage.scss';
-import {Link} from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 const ErrorPage = ({ className }: ErrorPageProps) => (
 
@@ -22,7 +22,7 @@ const ErrorPage = ({ className }: ErrorPageProps) => (
                     width="300px"
                 />
                 <Link
-                    to={'/'}
+                    to="/"
                     className="btn-go-home"
                     target="_blank"
                     rel="noreferrer"

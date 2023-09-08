@@ -8,11 +8,12 @@ export const ChangeTheme = ({ className }: ChangeThemeProps) => {
     const { toggleTheme } = useTheme();
 
     return (
-        <div
+        <button
+            type="button"
             onClick={toggleTheme}
             className={cn(styles.ChangeTheme, className)}
         >
             <ThemeChanger />
-        </div>
+        </button>
     );
 };

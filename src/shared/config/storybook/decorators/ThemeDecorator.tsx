@@ -1,35 +1,32 @@
-import type { StoryContext,Story } from '@storybook/react';
+import type { StoryContext, Story } from '@storybook/react';
 
-export const ThemeDecorator = (Story:Story,context:StoryContext) => {
-    let {scheme} = context.globals
+export const ThemeDecorator = (Story:Story, context:StoryContext) => {
+    const { globals } = context;
+    const { scheme } = globals;
 
-
-    if (scheme === 'light'){
-        return(
-            <div className={`app light`}>
+    if (scheme === 'light') {
+        return (
+            <div className="app light">
                 <Story />
             </div>
-        )
+        );
     }
-    if (scheme === 'dark'){
-        return(
-            <div className={`app dark`}>
+    if (scheme === 'dark') {
+        return (
+            <div className="app dark">
                 <Story />
             </div>
-        )
+        );
     }
-    return(
-        <div >
-        <div className={`app light`}>
-            <Story />
+    return (
+        <div>
+            <div className="app light">
+                <Story />
+            </div>
+            <div className="app dark">
+                <Story />
+            </div>
         </div>
-    <div className={`app dark`}>
-        <Story />
-    </div>
-        </div>
 
-    )
-}
-
-
-
+    );
+};
