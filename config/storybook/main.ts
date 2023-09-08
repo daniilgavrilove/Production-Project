@@ -17,6 +17,7 @@ const config: StorybookConfig = {
         autodocs: 'tag',
     },
     webpackFinal: async (config) => {
+        // eslint-disable-next-line no-param-reassign
         config.resolve.modules = [
             ...(config.resolve.modules || []),
             path.resolve(__dirname, '..', '..', 'src'),
